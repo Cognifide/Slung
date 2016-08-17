@@ -1,0 +1,93 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: smaller;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+span.diff-component-added {
+  display: inline-block;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #b2ff59;
+}
+
+span.diff-component-modified {
+  display: inline-block;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffff00;
+}
+
+span.diff-component-removed {
+  display: inline-block;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff5722;
+}
+
+ins.diff-text-added {
+  color: #b2ff59;
+}
+
+del.diff-text-removed {
+  color: #ff5722;
+}
+
+.diff-image-added {
+  border-style: solid;
+  border-width: 2px;
+  color: #b2ff59;
+}
+
+.diff-image-modified {
+  border-style: solid;
+  border-width: 2px;
+  color: #ffff00;
+}
+
+.diff-image-removed {
+  border-style: solid;
+  border-width: 2px;
+  color: #ff5722;
+}
+
+.flex-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  padding: 10px;
+  margin: 5px;
+
+  background: #2196f3;
+
+  color: #ffffff;
+  text-align: center;
+
+  flex-basis:auto
+}
+
+.flex-item.diffable {
+  background: #43a047;
+}
+
+.flex-item.not-diffable {
+  background: #ff5722;
+}
+
+.flex-item.omitted {
+  background: #78909c;
+}
+
+.flex-item .property-name:after {
+  content: '\a';
+  white-space:pre;
+}
+
+.flex-item .description {
+  font-weight: 500;
+}

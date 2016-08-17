@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+  xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="cq:Dialog"
+  title="Edit Sightly Slice component"
+  height="600"
+  width="600"
+  xtype="dialog">
+  <items jcr:primaryType="cq:WidgetCollection">
+    <tabPanel
+      jcr:primaryType="cq:Widget"
+      xtype="tabpanel">
+      <items jcr:primaryType="cq:WidgetCollection">
+        <general
+          jcr:primaryType="cq:Panel"
+          title="General">
+          <items jcr:primaryType="cq:WidgetCollection">
+            <title
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Text"
+              name="./text"
+              maxLength="100"
+              xtype="textfield" />
+            <nestedText
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Nested text"
+              name="./nested/text"
+              xtype="textfield" />
+            <richText
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Rich Text"
+              name="./richText"
+              xtype="richtext" />
+            <number
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Number"
+              name="./number"
+              xtype="numberfield" />
+            <condition
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Condition"
+              name="./condition"
+              type="checkbox"
+              xtype="selection" />
+            <image
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Image"
+              allowUpload="false"
+              cropParameter=""
+              rotateParameter=""
+              ddGroups="[media]"
+              disableZoom="{Boolean}true"
+              fileNameParameter="./image/fileName"
+              fileReferenceParameter="./image/fileReference"
+              name="./image/file"
+              mapParameter=""
+              requestSuffix="/image.img.png"
+              sizeLimit="100"
+              border="true"
+              height="{Long}250"
+              xtype="html5smartimage" />
+            <imageResourceType
+              jcr:primaryType="cq:Widget"
+              ignoreData="{Boolean}true"
+              name="./image/sling:resourceType"
+              value="foundation/components/image"
+              xtype="hidden" />
+          </items>
+        </general>
+      </items>
+    </tabPanel>
+  </items>
+</jcr:root>

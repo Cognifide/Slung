@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+  xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="cq:Dialog"
+  title="Edit event card"
+  height="600"
+  width="600"
+  xtype="dialog">
+  <items jcr:primaryType="cq:WidgetCollection">
+    <tabPanel
+      jcr:primaryType="cq:Widget"
+      xtype="tabpanel">
+      <items jcr:primaryType="cq:WidgetCollection">
+        <general
+          jcr:primaryType="cq:Panel"
+          title="General">
+          <items jcr:primaryType="cq:WidgetCollection">
+            <description
+              jcr:primaryType="cq:Widget"
+              title="Description"
+              collapsible="{Boolean}true"
+              xtype="dialogfieldset">
+              <items jcr:primaryType="cq:WidgetCollection">
+                <description
+                  jcr:primaryType="cq:Widget"
+                  fieldLabel="Description"
+                  fieldDescription="Event description"
+                  name="./description"
+                  xtype="textfield" />
+                <date
+                  jcr:primaryType="cq:Widget"
+                  fieldLabel="Date"
+                  fieldDescription="Event date"
+                  name="./date"
+                  xtype="datefield" />
+                <time
+                  jcr:primaryType="cq:Widget"
+                  fieldLabel="Time"
+                  fieldDescription="Event start time"
+                  name="./time"
+                  xtype="timefield" />
+              </items>
+            </description>
+            <addToCalendar
+              jcr:primaryType="cq:Widget"
+              title="Add to Calendar"
+              collapsible="{Boolean}true"
+              xtype="dialogfieldset">
+              <items jcr:primaryType="cq:WidgetCollection">
+                <label
+                  jcr:primaryType="cq:Widget"
+                  fieldLabel="Label"
+                  fieldDescription="Add to Calendar label"
+                  name="./label"
+                  xtype="textfield" />
+                <icon
+                  jcr:primaryType="cq:Widget"
+                  fieldLabel="Icon"
+                  fieldDescription="Add to Calendar icon"
+                  name="./icon"
+                  type="select"
+                  xtype="selection">
+                  <options jcr:primaryType="cq:WidgetCollection">
+                    <event
+                      jcr:primaryType="nt:unstructured"
+                      text="Event"
+                      value="event"/>
+                    <two
+                      jcr:primaryType="nt:unstructured"
+                      text="Birthday"
+                      value="cake"/>
+                    <three
+                      jcr:primaryType="nt:unstructured"
+                      text="Flight"
+                      value="flight"/>
+                    <four
+                      jcr:primaryType="nt:unstructured"
+                      text="Swimming"
+                      value="pool"/>
+                  </options>
+                </icon>
+              </items>
+            </addToCalendar>
+          </items>
+        </general>
+      </items>
+    </tabPanel>
+  </items>
+</jcr:root>

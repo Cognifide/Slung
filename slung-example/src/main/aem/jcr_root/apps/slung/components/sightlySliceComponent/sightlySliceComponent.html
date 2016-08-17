@@ -1,0 +1,143 @@
+<sly data-sly-use.model="com.cognifide.slung.example.ExampleModel">
+  <h3>Sightly Slice component</h3>
+
+  <h4>Text</h4>
+  <ul class='flex-container'>
+    <li class='flex-item not-diffable'><span class='description'>Context(html):</span> ${model.text @ context='html'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(text):</span> ${model.text @ context='text'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(elementName):</span> ${model.text @ context='elementName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attributeName):</span> ${model.text @ context='attributeName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attribute):</span> ${model.text @ context='attribute'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(uri):</span> ${model.text @ context='uri'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptToken):</span> ${model.text @ context='scriptToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptString):</span> ${model.text @ context='scriptString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptComment):</span> ${model.text @ context='scriptComment'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptRegExp):</span> ${model.text @ context='scriptRegExp'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleToken):</span> ${model.text @ context='styleToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleString):</span> ${model.text @ context='styleString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(styleComment):</span> ${model.text @ context='styleComment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(comment):</span> ${model.text @ context='comment'}</li>
+    <li class='flex-item omitted'><span class='description'>Context(number):</span></li>
+    <li class='flex-item diffable'><span class='description'>Context(unsafe):</span> ${model.text @ context='unsafe'}</li>
+  </ul>
+
+  <h4>Nested text</h4>
+  <ul class='flex-container'>
+    <li class='flex-item not-diffable'><span class='description'>Context(html):</span> ${model.nestedText @ context='html'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(text):</span> ${model.nestedText @ context='text'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(elementName):</span> ${model.nestedText @ context='elementName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attributeName):</span> ${model.nestedText @ context='attributeName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attribute):</span> ${model.nestedText @ context='attribute'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(uri):</span> ${model.nestedText @ context='uri'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptToken):</span> ${model.nestedText @ context='scriptToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptString):</span> ${model.nestedText @ context='scriptString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptComment):</span> ${model.nestedText @ context='scriptComment'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptRegExp):</span> ${model.nestedText @ context='scriptRegExp'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleToken):</span> ${model.nestedText @ context='styleToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleString):</span> ${model.nestedText @ context='styleString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(styleComment):</span> ${model.nestedText @ context='styleComment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(comment):</span> ${model.nestedText @ context='comment'}</li>
+    <li class='flex-item omitted'><span class='description'>Context(number):</span></li>
+    <li class='flex-item diffable'><span class='description'>Context(unsafe):</span> ${model.nestedText @ context='unsafe'}</li>
+  </ul>
+
+  <h4>Rich Text</h4>
+  <ul class='flex-container'>
+    <li class='flex-item not-diffable'><span class='description'>Context(html):</span> ${model.richText @ context='html'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(text):</span> ${model.richText @ context='text'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(elementName):</span> ${model.richText @ context='elementName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attributeName):</span> ${model.richText @ context='attributeName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attribute):</span> ${model.richText @ context='attribute'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(uri):</span> ${model.richText @ context='uri'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptToken):</span> ${model.richText @ context='scriptToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptString):</span> ${model.richText @ context='scriptString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptComment):</span> ${model.richText @ context='scriptComment'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptRegExp):</span> ${model.richText @ context='scriptRegExp'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleToken):</span> ${model.richText @ context='styleToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleString):</span> ${model.richText @ context='styleString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(styleComment):</span> ${model.richText @ context='styleComment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(comment):</span> ${model.richText @ context='comment'}</li>
+    <li class='flex-item omitted'><span class='description'>Context(number):</span></li>
+    <li class='flex-item diffable'><span class='description'>Context(unsafe):</span> ${model.richText @ context='unsafe'}</li>
+  </ul>
+
+  <h4>Number</h4>
+  <ul class='flex-container'>
+    <li class='flex-item not-diffable'><span class='description'>Context(html):</span> ${model.number @ context='html'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(text):</span> ${model.number @ context='text'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(elementName):</span> ${model.number @ context='elementName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attributeName):</span> ${model.number @ context='attributeName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attribute):</span> ${model.number @ context='attribute'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(uri):</span> ${model.number @ context='uri'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptToken):</span> ${model.number @ context='scriptToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptString):</span> ${model.number @ context='scriptString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptComment):</span> ${model.number @ context='scriptComment'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptRegExp):</span> ${model.number @ context='scriptRegExp'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleToken):</span> ${model.number @ context='styleToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleString):</span> ${model.number @ context='styleString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(styleComment):</span> ${model.number @ context='styleComment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(comment):</span> ${model.number @ context='comment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(number):</span> ${model.number @ context='number'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(unsafe):</span> ${model.number @ context='unsafe'}</li>
+  </ul>
+
+  <h4>Number as string</h4>
+  <ul class='flex-container'>
+    <li class='flex-item not-diffable'><span class='description'>Context(html):</span> ${model.numberAsString @ context='html'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(text):</span> ${model.numberAsString @ context='text'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(elementName):</span> ${model.numberAsString @ context='elementName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attributeName):</span> ${model.numberAsString @ context='attributeName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attribute):</span> ${model.numberAsString @ context='attribute'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(uri):</span> ${model.numberAsString @ context='uri'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptToken):</span> ${model.numberAsString @ context='scriptToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptString):</span> ${model.numberAsString @ context='scriptString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptComment):</span> ${model.numberAsString @ context='scriptComment'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptRegExp):</span> ${model.numberAsString @ context='scriptRegExp'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleToken):</span> ${model.numberAsString @ context='styleToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleString):</span> ${model.numberAsString @ context='styleString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(styleComment):</span> ${model.numberAsString @ context='styleComment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(comment):</span> ${model.numberAsString @ context='comment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(number):</span> ${model.numberAsString @ context='number'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(unsafe):</span> ${model.numberAsString @ context='unsafe'}</li>
+  </ul>
+
+  <h4>Condition</h4>
+  <ul class='flex-container'>
+    <li class='flex-item not-diffable'><span class='description'>Context(html):</span> ${model.condition @ context='html'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(text):</span> ${model.condition @ context='text'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(elementName):</span> ${model.condition @ context='elementName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attributeName):</span> ${model.condition @ context='attributeName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attribute):</span> ${model.condition @ context='attribute'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(uri):</span> ${model.condition @ context='uri'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptToken):</span> ${model.condition @ context='scriptToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptString):</span> ${model.condition @ context='scriptString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptComment):</span> ${model.condition @ context='scriptComment'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptRegExp):</span> ${model.condition @ context='scriptRegExp'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleToken):</span> ${model.condition @ context='styleToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleString):</span> ${model.condition @ context='styleString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(styleComment):</span> ${model.condition @ context='styleComment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(comment):</span> ${model.condition @ context='comment'}</li>
+    <li class='flex-item omitted'><span class='description'>Context(number):</span></li>
+    <li class='flex-item diffable'><span class='description'>Context(unsafe):</span> ${model.condition @ context='unsafe'}</li>
+  </ul>
+
+  <h4>Condition as string</h4>
+  <ul class='flex-container'>
+    <li class='flex-item not-diffable'><span class='description'>Context(html):</span> ${model.conditionAsString @ context='html'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(text):</span> ${model.conditionAsString @ context='text'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(elementName):</span> ${model.conditionAsString @ context='elementName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attributeName):</span> ${model.conditionAsString @ context='attributeName'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(attribute):</span> ${model.conditionAsString @ context='attribute'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(uri):</span> ${model.conditionAsString @ context='uri'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptToken):</span> ${model.conditionAsString @ context='scriptToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(scriptString):</span> ${model.conditionAsString @ context='scriptString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptComment):</span> ${model.conditionAsString @ context='scriptComment'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(scriptRegExp):</span> ${model.conditionAsString @ context='scriptRegExp'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleToken):</span> ${model.conditionAsString @ context='styleToken'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(styleString):</span> ${model.conditionAsString @ context='styleString'}</li>
+    <li class='flex-item diffable'><span class='description'>Context(styleComment):</span> ${model.conditionAsString @ context='styleComment'}</li>
+    <li class='flex-item not-diffable'><span class='description'>Context(comment):</span> ${model.conditionAsString @ context='comment'}</li>
+    <li class='flex-item omitted'><span class='description'>Context(number):</span></li>
+    <li class='flex-item diffable'><span class='description'>Context(unsafe):</span> ${model.conditionAsString @ context='unsafe'}</li>
+  </ul>
+</sly>

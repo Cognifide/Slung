@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+  <filter root="/apps/slung" />
+  <filter root="/content/slung" />
+  <filter root="/etc/designs/material" />
+  <filter root="/etc/designs/slung" />
+
+  <filter root="/var/classes/org/apache/jsp/apps/slung" />
+  <filter root="/apps/slung/install" />
+  <filter root="/apps/slice/install" />
+  <filter root="/apps/slice-addon/install" />
+  <filter root="/apps/sling-models/install" />
+</workspaceFilter>

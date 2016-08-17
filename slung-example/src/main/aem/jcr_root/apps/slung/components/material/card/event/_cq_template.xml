@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="nt:unstructured"
+  description="Featured event:"
+  date="{Date}01/01/16"
+  time="8:00 PM"
+  label="Add to Calendar"
+  icon="event"/>

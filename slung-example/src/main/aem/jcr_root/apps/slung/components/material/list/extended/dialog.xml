@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+  xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="cq:Dialog"
+  title="Edit event card"
+  height="600"
+  width="600"
+  xtype="dialog">
+  <items jcr:primaryType="cq:WidgetCollection">
+    <tabPanel
+      jcr:primaryType="cq:Widget"
+      xtype="tabpanel">
+      <items jcr:primaryType="cq:WidgetCollection">
+        <general
+          jcr:primaryType="cq:Panel"
+          title="General">
+          <items jcr:primaryType="cq:WidgetCollection">
+            <multi
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Multi-Field"
+              hideLabel="{Boolean}true"
+              name="./multi"
+              xtype="multifield">
+              <panel
+                jcr:primaryType="cq:Widget"
+                border="true"
+                hideLabel="true"
+                layout="form"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                  <label
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Label"
+                    fieldDescription="Image label"
+                    name="./label"
+                    xtype="textfield" />
+                  <link
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link"
+                    fieldDescription="Image link"
+                    name="./link"
+                    xtype="pathfield" />
+                </items>
+              </panel>
+            </multi>
+          </items>
+        </general>
+      </items>
+    </tabPanel>
+  </items>
+</jcr:root>

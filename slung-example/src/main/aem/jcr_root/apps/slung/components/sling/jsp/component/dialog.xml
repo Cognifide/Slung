@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+  xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="cq:Dialog"
+  title="Edit [Slung] [Sling] [Jsp] Component"
+  height="600"
+  width="600"
+  xtype="dialog">
+  <items jcr:primaryType="cq:WidgetCollection">
+    <tabPanel
+      jcr:primaryType="cq:Widget"
+      xtype="tabpanel">
+      <items jcr:primaryType="cq:WidgetCollection">
+        <general
+          jcr:primaryType="cq:Panel"
+          title="General">
+          <items jcr:primaryType="cq:WidgetCollection">
+            <text
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Text"
+              name="./text"
+              xtype="textfield" />
+            <redText
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Red text"
+              name="./redText"
+              xtype="textfield" />
+            <elements
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Elements"
+              name="./elements"
+              xtype="multifield" />
+            <nestedText
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Nested text"
+              name="./nested/text"
+              xtype="textfield" />
+            <richText
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Rich Text"
+              name="./richText"
+              xtype="richtext" />
+            <pin
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Pin"
+              name="./pin"
+              xtype="numberfield" />
+            <number
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Number"
+              name="./number"
+              xtype="numberfield" />
+            <condition
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Condition"
+              name="./condition"
+              type="checkbox"
+              xtype="selection" />
+            <image
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Image"
+              allowUpload="false"
+              cropParameter=""
+              rotateParameter=""
+              ddGroups="[media]"
+              disableZoom="{Boolean}true"
+              fileNameParameter="./image/fileName"
+              fileReferenceParameter="./image/fileReference"
+              name="./image/file"
+              mapParameter=""
+              requestSuffix="/image.img.png"
+              sizeLimit="100"
+              border="true"
+              height="{Long}250"
+              xtype="html5smartimage" />
+            <imageResourceType
+              jcr:primaryType="cq:Widget"
+              ignoreData="{Boolean}true"
+              name="./image/sling:resourceType"
+              value="foundation/components/image"
+              xtype="hidden" />
+            <image2
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Image 2"
+              allowUpload="false"
+              cropParameter=""
+              rotateParameter=""
+              ddGroups="[media]"
+              disableZoom="{Boolean}true"
+              fileNameParameter="./image2/fileName"
+              fileReferenceParameter="./image2/fileReference"
+              name="./image2/file"
+              mapParameter=""
+              requestSuffix="/image.img.png"
+              sizeLimit="100"
+              border="true"
+              height="{Long}250"
+              xtype="html5smartimage" />
+            <imageResourceType2
+              jcr:primaryType="cq:Widget"
+              ignoreData="{Boolean}true"
+              name="./image2/sling:resourceType"
+              value="foundation/components/image"
+              xtype="hidden" />
+          </items>
+        </general>
+      </items>
+    </tabPanel>
+  </items>
+</jcr:root>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
+  xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="cq:Dialog"
+  title="Edit [Slung] [Slice] [Jsp] Component"
+  height="600"
+  width="600"
+  xtype="dialog">
+  <items jcr:primaryType="cq:WidgetCollection">
+    <tabPanel
+      jcr:primaryType="cq:Widget"
+      xtype="tabpanel">
+      <items jcr:primaryType="cq:WidgetCollection">
+        <general
+          jcr:primaryType="cq:Panel"
+          title="General">
+          <items jcr:primaryType="cq:WidgetCollection">
+            <redText
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Red text"
+              name="./redText"
+              xtype="textfield" />
+            <elements
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Elements"
+              name="./elements"
+              xtype="multifield" />
+            <nestedText
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Nested text"
+              name="./nested/text"
+              xtype="textfield" />
+            <pin
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Pin"
+              name="./pin"
+              xtype="numberfield" />
+            <number
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Number"
+              name="./number"
+              xtype="numberfield" />
+            <condition
+              jcr:primaryType="cq:Widget"
+              fieldLabel="Condition"
+              name="./condition"
+              type="checkbox"
+              xtype="selection" />
+          </items>
+        </general>
+      </items>
+    </tabPanel>
+  </items>
+</jcr:root>
